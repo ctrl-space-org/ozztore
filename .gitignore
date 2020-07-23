@@ -25,3 +25,8 @@ hs_err_pid*
 # Intelli IDE ignore
 .ida/
 ozztore.iml
+
+# Build
+build
+
+.gradle
