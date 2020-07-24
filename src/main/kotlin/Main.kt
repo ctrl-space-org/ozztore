@@ -6,16 +6,17 @@ fun main(){
     entity.attributes.get("teste")?.execute()
 
 
+    var product = Entity()
     // Entity Product
     // name
     // price
 
-
+    var shoppingCart = Entity()
     // Shopping Cart
     // List Products
     // Total
 
-
+    var order = Entity()
     // Aggregate Order
     // All products from Cart
     // Client Info
