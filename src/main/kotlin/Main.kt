@@ -7,11 +7,11 @@ fun main(){
 
     // Product
     var product = Entity()
-    // Entity Product
     // name
     // price
     // id
     // stock
+    // min_age
 
     // Shopping Cart Item
     var shoppingCartItem = Entity()
@@ -25,6 +25,9 @@ fun main(){
 
     // Client
     var client = Entity()
+    // birthday
+    // name
+    // email
 
     // Payment
     var payment = Entity()
