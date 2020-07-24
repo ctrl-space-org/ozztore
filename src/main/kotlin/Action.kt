@@ -1,0 +1,3 @@
+interface work {
+  fun execute()
+}
