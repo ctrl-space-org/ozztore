@@ -1,3 +1,3 @@
-interface work {
+interface Action {
   fun execute()
 }
