@@ -5,21 +5,34 @@ fun main(){
     entity.attributes.put("teste", regra)
     entity.attributes.get("teste")?.execute()
 
-
+    // Product
     var product = Entity()
     // Entity Product
     // name
     // price
+    // id
+    // stock
 
-    var shoppingCart = Entity()
+    // Shopping Cart Item
+    var shoppingCartItem = Entity()
+    // product(?id)
+    // quantity
+
     // Shopping Cart
-    // List Products
+    var shoppingCart = Entity()
+    // List of Shopping Cart Item
     // Total
 
+    // Client
+    var client = Entity()
+
+    // Payment
+    var payment = Entity()
+
+    // Order *Aggregate
     var order = Entity()
-    // Aggregate Order
-    // All products from Cart
-    // Client Info
-    // Delivery address info
-    // Payment Info
+    // Cart(?id)
+    // Client(?id)
+    // Address(?id)
+    // Payment(?id)
 }
