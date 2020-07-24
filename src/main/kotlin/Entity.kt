@@ -9,4 +9,10 @@ class Entity {
 
   lateinit var rules: List<Function<Action>>
 
+    fun validations():List<List<String>>{
+
+        return attributes.map { at->  at.value.validate().map{s -> s.replace("?",at.key ) } }
+    }
+
+
 }

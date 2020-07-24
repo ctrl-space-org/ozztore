@@ -1,11 +1,11 @@
 package Attribute
 
-class Attribute(var type: Types, var value: String, var validation: List<Validation>) {
+class Attribute(var validation: List<Validation>, var value: String = "") {
 
     fun validate(): List<String> {
        return validation.map {
             val regex = Regex(it.regex);
-            val error = when(type) {
+            val error = when(it.type) {
                 Types.matches -> !regex.matches(value)
                 Types.containsMatchIn -> !regex.matches(value)
                 Types.find -> !regex.matches(value)

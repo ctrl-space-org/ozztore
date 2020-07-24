@@ -1,3 +1,3 @@
 package Attribute
 
-class Validation(var type: String,var name:String, var regex:String, var message: String)
+class Validation(var type: Types, var regex:String, var message: String)
