@@ -1,6 +1,7 @@
 package Attribute
 
-class Attribute(var validation: List<Validation>, var value: String = "") {
+data class Attribute(var validation: List<Validation> = ArrayList<Validation>(), var value: String = "") {
+
 
     fun validate(): List<String> {
        return validation.filter {

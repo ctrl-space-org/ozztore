@@ -2,17 +2,27 @@ import Attribute.Attribute
 import Attribute.Types
 import Attribute.Validation
 
+
 fun main(){
-    var entity = Entity()
+//    var entity = Entity()
     // Trying to override validation
     var regra = object : validation { override fun execute() { print("hello \n")}}
 
+    val entity = load()
 
-    entity.attributes.put("name", Attribute( listOf(Validation(Types.matches,"[a-zA-Z\\s]+","? contains numbers"))))
-    entity.attributes.put("age", Attribute( listOf(Validation(Types.matches,"^[0-9]*\$","? accept only number"))))
-    entity.attributes.get("name")?.value = "Leozinho"
-    entity.attributes.get("age")?.value = "25"
+
+    entity.attributes.get("name")?.value = "Leozinho2"
+    entity.attributes.get("age")?.value = "25a"
+
     println(entity.validations())
+
+    // Prepare source somehow.
+    //val source = "public class Test {  public Test() { System.out.println(\"world\"); } public void teste1(){} }"
+
+   // val helloClass: Class<*> = InMemoryJavaCompiler.compile("Test", source.toString())
+   // helloClass.methods.forEach { println(it.name) }
+
+   // println(instance) // Should print "test.Test@hashcode".
 
 
     //println(attb.validate())
